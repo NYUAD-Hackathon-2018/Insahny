@@ -263,7 +263,7 @@ public class DetectionActivity extends AppCompatActivity {
                     Log.d("you are aweaome", "you are aweaome");
                 }
                 JsonArray jsonArray = element.getAsJsonArray();
-                new CallAPI().execute("http://pitchkings.net/hackathon/sendEmotion.php/", "emotion=" + jsonArray.toString());
+                new CallAPI().execute("http://pitchkings.net/hackathon/sendEmotion.php/", "emotion=" + "{results:" + jsonArray.toString() + "}");
             } else {
                 detectionResult = "0 face detected";
             }
