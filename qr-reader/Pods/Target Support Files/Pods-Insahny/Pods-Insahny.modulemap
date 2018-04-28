@@ -1,0 +1,6 @@
+framework module Pods_Insahny {
+  umbrella header "Pods-Insahny-umbrella.h"
+
+  export *
+  module * { export * }
+}
