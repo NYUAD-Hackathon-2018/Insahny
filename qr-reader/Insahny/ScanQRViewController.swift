@@ -11,7 +11,21 @@ import AVFoundation
 import Alamofire
 
 class ScanQRViewController: UIViewController,AVCaptureMetadataOutputObjectsDelegate {
-    var qrSeen = Set<String>()
+    
+    var qrSeen = Set<String>() {
+        didSet {
+            txtViewQr.text = "\(qrSeen)"
+        }
+    }
+    
+    
+    @IBOutlet weak var txtViewQr: UITextView!
+    
+    @IBAction func reset(_ sender: Any) {
+        qrSeen.removeAll()
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
