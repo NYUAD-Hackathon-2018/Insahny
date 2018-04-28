@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId "com.nyuadhack.insahny"
+        minSdkVersion 22
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    // Include local lib mostly for debug purpose.
+    // implementation project(':lib')
+
+    // Use the following line to include client library for Face API from Maven Central Repository
+    implementation 'com.microsoft.projectoxford:face:1.4.3'
+    implementation 'com.android.support:appcompat-v7:22.1.0'
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    // JSON Parsing
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+
+}
