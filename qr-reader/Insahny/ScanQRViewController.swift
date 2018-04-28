@@ -56,13 +56,20 @@ class ScanQRViewController: UIViewController,AVCaptureMetadataOutputObjectsDeleg
             }
         }
         print("--------")
-        
+        print(qrSeen)
     }
     
     
     @IBAction func sendQR(_ sender: Any) {
+        let results =  ["qrs": Array(qrSeen) ]
+        guard let resultsData = try? JSONEncoder().encode(results) else {
+            return
+        }
+        guard let resultsString = String(data: resultsData, encoding: .utf8) else {
+            return
+        }
         let qr: Parameters = [
-            "qr": Array(qrSeen)
+            "qr": resultsString
         ]
         
         Alamofire.request("https://pitchkings.net/hackathon/driver.php", method: .post, parameters: qr).responseJSON { response in
