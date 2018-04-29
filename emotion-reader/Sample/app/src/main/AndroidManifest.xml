@@ -92,7 +92,7 @@
             android:parentActivityName="com.nyuadhack.insahny.ui.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.nyuadhack.insahny.persongroupmanagement.PersonGroupListActivity"
+            android:name="com.nyuadhack.insahny.management.PersonGroupListActivity"
             android:label="@string/person_group_list"
             android:launchMode="singleTop"
             android:parentActivityName="com.nyuadhack.insahny.ui.IdentificationActivity"
@@ -102,35 +102,35 @@
                 android:value="com.nyuadhack.insahny.ui.IdentificationActivity" />
         </activity>
         <activity
-            android:name="com.nyuadhack.insahny.persongroupmanagement.PersonGroupActivity"
+            android:name="com.nyuadhack.insahny.management.PersonGroupActivity"
             android:label="@string/person_group"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustNothing"
-            android:parentActivityName="com.nyuadhack.insahny.persongroupmanagement.PersonGroupListActivity"
+            android:parentActivityName="com.nyuadhack.insahny.management.PersonGroupListActivity"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.nyuadhack.insahny.persongroupmanagement.PersonGroupListActivity" />
+                android:value="com.nyuadhack.insahny.management.PersonGroupListActivity" />
         </activity>
         <activity
-            android:name="com.nyuadhack.insahny.persongroupmanagement.PersonActivity"
+            android:name="com.nyuadhack.insahny.management.PersonActivity"
             android:label="@string/person"
             android:launchMode="singleTop"
             android:windowSoftInputMode="adjustNothing"
-            android:parentActivityName="com.nyuadhack.insahny.persongroupmanagement.PersonGroupActivity"
+            android:parentActivityName="com.nyuadhack.insahny.management.PersonGroupActivity"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.nyuadhack.insahny.persongroupmanagement.PersonGroupActivity" />
+                android:value="com.nyuadhack.insahny.management.PersonGroupActivity" />
         </activity>
         <activity
-            android:name="com.nyuadhack.insahny.persongroupmanagement.AddFaceToPersonActivity"
+            android:name="com.nyuadhack.insahny.management.AddFaceToPersonActivity"
             android:label="@string/add_face_to_person"
-            android:parentActivityName="com.nyuadhack.insahny.persongroupmanagement.PersonActivity"
+            android:parentActivityName="com.nyuadhack.insahny.management.PersonActivity"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.nyuadhack.insahny.persongroupmanagement.PersonActivity" />
+                android:value="com.nyuadhack.insahny.management.PersonActivity" />
         </activity>
         <activity
             android:name="com.nyuadhack.insahny.log.DetectionLogActivity"

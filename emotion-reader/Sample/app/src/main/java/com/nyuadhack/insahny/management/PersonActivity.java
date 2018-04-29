@@ -1,5 +1,5 @@
 
-package com.nyuadhack.insahny.persongroupmanagement;
+package com.nyuadhack.insahny.management;
 
 import android.app.ProgressDialog;
 import android.content.Context;

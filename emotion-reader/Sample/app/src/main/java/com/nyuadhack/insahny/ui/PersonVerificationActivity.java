@@ -27,7 +27,7 @@ import com.nyuadhack.insahny.helper.LogHelper;
 import com.nyuadhack.insahny.helper.SampleApp;
 import com.nyuadhack.insahny.helper.StorageHelper;
 import com.nyuadhack.insahny.log.VerificationLogActivity;
-import com.nyuadhack.insahny.persongroupmanagement.PersonGroupListActivity;
+import com.nyuadhack.insahny.management.PersonGroupListActivity;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

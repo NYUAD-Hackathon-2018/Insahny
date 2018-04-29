@@ -1,4 +1,3 @@
-<!-- Copyright (c) Microsoft. All rights reserved. -->
 
 <resources>
     <!-- Please refer to https://azure.microsoft.com/en-us/services/cognitive-services/face/ to get your subscription key -->
@@ -14,7 +13,7 @@
     <string name="identification">Identification</string>
     <string name="grouping">Grouping</string>
     <string name="find_similar_faces">Find Similar Faces</string>
-    <string name="detection_description">Detect faces, face landmarks, pose, smile, glasses, gender, and age.</string>
+    <string name="detection_description">Detect faces and emotions from a given Image</string>
     <string name="verification_description">Authentication between two faces or between a face and a person.</string>
     <string name="grouping_description">Group faces based on similarity.</string>
     <string name="find_similar_face_description">Search for similar-looking faces.</string>
